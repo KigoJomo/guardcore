@@ -25,8 +25,7 @@ const WhatsAppButton = () => {
 
       {/* Modal */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-end md:items-center justify-end p-4" onClick={() => setIsOpen(false)}
->
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-end md:items-center justify-end p-4">
           <div className="bg-white rounded-lg shadow-2xl max-w-sm w-full animate-fade-in-up">
             {/* Modal Header */}
             <div className="flex justify-between items-center p-4 border-b">
