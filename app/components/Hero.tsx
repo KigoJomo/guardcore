@@ -25,7 +25,7 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
           welcome to Guardcore Technologies
         </h1>
 
-        <h2 className="text-center md:text-left font-bold text-background leading-6 md:leading-[3rem] md:max-w-[60vw]">
+        <h2 className="text-center md:text-left font-bold text-background text-3xl md:text-5xl leading-8 md:leading-[3rem] md:max-w-[60vw]">
           Delivering world-class Telecommunications, Security Systems, & IT Solutions
         </h2>
 
