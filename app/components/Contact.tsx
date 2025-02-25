@@ -48,9 +48,6 @@ const Contact: React.FC<ContactProps> = ({ className }) => {
                     <a href="tel:+254704969444" className="block text-background-light hover:text-blue-600 transition-colors">
                       +254 704 969 444 (Office)
                     </a>
-                    <a href="tel:+254720876126" className="block text-background-light hover:text-blue-600 transition-colors">
-                      +254 720 876 126 (Mobile)
-                    </a>
                   </div>
                 </div>
               </div>
