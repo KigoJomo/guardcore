@@ -5,6 +5,7 @@ import React from 'react';
 import Button from './Button';
 import { Cpu, MessageSquare, Shield, Wifi, Zap } from 'lucide-react';
 import Image from 'next/image';
+import AnimatedWrapper from './AnimatedWrapper';
 
 interface solutionsProps {
   className?: string;
@@ -74,9 +75,11 @@ const Solutions: React.FC<solutionsProps> = ({ className }) => {
       <section id="services" className="">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div
+            <AnimatedWrapper
+              animationType="slideUp"
+              duration={(index + 1) * 0.5}
               key={index}
-              className="bg-background rounded-3xl shadow-2xl hover:shadow-xl transition-shadow w-full aspect-[1.25/1] md:aspect-[1.5/1] grid grid-cols-1 grid-rows-1 relative group overflow-hidden">
+              className="bg-background rounded-3xl shadow-lg hover:shadow transition-shadow w-full aspect-[1.25/1] md:aspect-[1.5/1] grid grid-cols-1 grid-rows-1 relative group overflow-hidden">
 
               {/* details */}
               <div className="col-span-1 row-span-1 aspect-[1.25/1] md:aspect-[1.5/1] p-6 flex flex-col gap-4 z-[2]">
@@ -103,7 +106,7 @@ const Solutions: React.FC<solutionsProps> = ({ className }) => {
                 height={1000}
                 className="col-span-1 row-span-1 aspect-[1.25/1] md:aspect-[1.5/1] rounded-3xl z-0 group-hover:scale-105 transition-all duration-300"
               />
-            </div>
+            </AnimatedWrapper>
           ))}
         </div>
       </section>

@@ -45,7 +45,7 @@
   padding: 0;
   box-sizing: border-box;
   /* font-family: "Nunito Sans", serif; */
-  font-family: "Funnel Display", serif;
+  font-family: 'Funnel Display', serif;
   color: var(--primary);
 }
 
@@ -62,7 +62,7 @@ h1 {
     var(--font-size) * var(--font-ratio) * var(--font-ratio) * var(--font-ratio)
   );
   text-transform: uppercase;
-  font-family: "Nunito Sans", serif;
+  font-family: 'Nunito Sans', serif;
 }
 
 h2 {
@@ -118,8 +118,8 @@ img {
 }
 
 .scrollbar-custom::-webkit-scrollbar {
-  width: .5rem;
-  height: .5rem;
+  width: 0.5rem;
+  height: 0.5rem;
 }
 
 .scrollbar-custom::-webkit-scrollbar-track {
@@ -128,7 +128,7 @@ img {
 
 .scrollbar-custom::-webkit-scrollbar-thumb {
   background-color: var(--foreground-faded);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
@@ -162,7 +162,15 @@ img {
 }
 
 .animated-gradient {
-  background: linear-gradient(290deg, #000000, #464444, #151414);
+  color: transparent;
+  background: linear-gradient(290deg, #e100ff, #b93d3d, #00adf1);
+  background-size: 180% 180%;
+  animation: gradient-animation 3s ease infinite;
+  background-clip: text;
+}
+
+.animated-background {
+  background: linear-gradient(290deg, #e6e6e6, #dddddd, #ffffff);
   background-size: 180% 180%;
   animation: gradient-animation 12s ease infinite;
 }
@@ -179,7 +187,7 @@ img {
   }
 }
 
-.solutions-background{
+.solutions-background {
   background: url('/images/solutions.webp') center/cover no-repeat;
   background-attachment: fixed;
   position: relative;
@@ -196,7 +204,7 @@ img {
     background: rgba(0, 0, 0, 0.295);
   }
 
-  *{
+  * {
     z-index: 1;
   }
 }
@@ -243,9 +251,10 @@ html {
   body {
     color: var(--foreground);
 
-    header, .admin-nav {
+    header,
+    .admin-nav {
       width: 100vw;
-      padding: .5rem 2rem;
+      padding: 0.5rem 2rem;
     }
 
     section {
@@ -258,7 +267,8 @@ html {
     }
 
     @media (max-width: 768px) {
-      header, .admin-nav {
+      header,
+      .admin-nav {
         padding: 0.8rem 1rem;
       }
       section {

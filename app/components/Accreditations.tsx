@@ -3,10 +3,9 @@
 import Link from 'next/link';
 import React from 'react';
 import Button from './Button';
-import {
-  BadgeCheck,
-} from 'lucide-react';
+import { BadgeCheck } from 'lucide-react';
 import Image from 'next/image';
+import AnimatedWrapper from './AnimatedWrapper';
 
 interface AccreditationsProps {
   className?: string;
@@ -42,7 +41,9 @@ const Accreditations: React.FC<AccreditationsProps> = ({ className }) => {
   ];
 
   return (
-    <section id='accreditations' className={`${className} py-16 md:py-24 px-4 md:px-8`}>
+    <section
+      id="accreditations"
+      className={`${className} py-16 md:py-24 px-4 md:px-8`}>
       <div className="md:w-1/2 mb-12 md:mb-16">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Mark of Excellence
@@ -54,25 +55,25 @@ const Accreditations: React.FC<AccreditationsProps> = ({ className }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
         {certifications.map((cert, index) => (
-          <div
+          <AnimatedWrapper
+            animationType="scaleIn"
+            duration={(index + 1) * 0.25}
             key={index}
-            className="bg-background p-6 md:p-8 rounded-3xl shadow-2xl hover:shadow-xl transition-all duration-300">
-            <div className="flex flex-col items-start gap-6">
-              <Image
-                src={cert.image}
-                alt={cert.title}
-                width={200}
-                height={200}
-                className="object-contain"
-              />
-              <div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  {cert.title}
-                </h3>
-                <p className="text-muted-foreground">{cert.description}</p>
-              </div>
-            </div>
-          </div>
+            className="bg-background p-6 md:p-8 rounded-3xl shadow-lg hover:shadow border border-foreground-faded transition-shadow duration-300 flex flex-col items-start gap-4 animated-background">
+            <Image
+              src={cert.image}
+              alt={cert.title}
+              width={200}
+              height={200}
+              className="object-contain h-12 w-auto"
+            />
+            <h3 className="text-xl font-semibold text-foreground">
+              {cert.title}
+            </h3>
+            <p className="border-l-4 border-blue-600 pl-4">
+              {cert.description}
+            </p>
+          </AnimatedWrapper>
         ))}
       </div>
 
