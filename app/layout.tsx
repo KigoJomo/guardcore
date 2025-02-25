@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/whatsapp-button";
 
 export const metadata: Metadata = {
   title: "Guardcore Technologies | Leading Electro-Mechanical, Telecom & IT Solutions in Kenya",
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body className="scrollbar-hidden relative">
         <Header />
         {children}
+        <WhatsAppButton />
         <Footer />
       </body>
     </html>
