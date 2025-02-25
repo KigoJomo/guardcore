@@ -5,6 +5,7 @@ import {
   House,
   Info,
   Instagram,
+  MessageCircleMore,
   SquareStack,
   Twitter,
 } from 'lucide-react';
@@ -22,12 +23,13 @@ const Header: React.FC = () => {
 
   const pages = [
     { name: 'home', url: '/#intro', icon: <House size={16} /> },
-    { name: 'about', url: '/#about', icon: <Info size={16} /> },
+    { name: 'about us', url: '/#about', icon: <Info size={16} /> },
     {
       name: 'services',
       url: '/#services',
       icon: <SquareStack size={16} />,
     },
+    { name: 'contact us', url: '/#contact', icon: <MessageCircleMore size={16} /> },
   ];
 
   return (
