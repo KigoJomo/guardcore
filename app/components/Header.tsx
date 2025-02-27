@@ -49,7 +49,7 @@ const Header: React.FC = () => {
             alt="GuardCore Technologies"
             width={1000}
             height={1000}
-            className="object-contain h-12 w-auto md:h-16"
+            className="object-contain h-12 w-auto md:h-20"
           />
         </Link>
       </div>

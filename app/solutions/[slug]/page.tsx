@@ -38,7 +38,7 @@ const PageNavigation = () => {
   ];
 
   return (
-    <div className="w-full md:w-1/5 h-fit md:sticky md:top-[5.5rem] rounded-xl border border-foreground-faded shadow-lg animated-background p-4 space-y-2">
+    <div className="w-full md:w-1/5 h-fit md:sticky md:top-[6.25rem] rounded-xl border border-foreground-faded shadow-lg animated-background p-4 space-y-2">
       {links.map((link) => (
         <Link
           key={link.id}

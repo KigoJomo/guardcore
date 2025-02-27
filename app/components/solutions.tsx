@@ -13,20 +13,7 @@ interface SolutionsProps {
 const Solutions: React.FC<SolutionsProps> = ({ className }) => {
   return (
     <>
-      <section
-        id="solutions"
-        className={`flex flex-col items-center gap-12 pt-16 ${className}`}>
-        <h2 className="font-bold text-center leading-6 md:leading-[3rem] md:max-w-[60vw]">
-          Tailored Solutions for Modern Business Challenges
-        </h2>
-        <p className="text-center md:max-w-[60vw]">
-          Guardcore Technologies delivers tailored services that meet modern
-          industry demands. Each solution blends certified expertise with
-          cutting-edge technology to deliver compliant, future-ready results.
-        </p>
-      </section>
-
-      <section id="services" className="pb-12">
+      <section id="services" className={`pt-12 ${className}`}>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Link key={service.slug} href={`/solutions/${service.slug}`}>

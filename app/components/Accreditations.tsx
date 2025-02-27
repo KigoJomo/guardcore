@@ -1,8 +1,6 @@
 // app/components/accreditations.tsx
 
-import Link from 'next/link';
 import React from 'react';
-import Button from './Button';
 import { BadgeCheck } from 'lucide-react';
 import Image from 'next/image';
 import AnimatedWrapper from './AnimatedWrapper';
@@ -27,17 +25,7 @@ const Accreditations: React.FC<AccreditationsProps> = ({ className }) => {
       title: 'NCA 6 Certification',
       description: 'Proficiency in large-scale electrical installations',
       image: '/images/nca.webp',
-    },
-    {
-      title: 'Electrical License (EPRA/EW/05711)',
-      description: 'Adherence to electrical safety & quality standards',
-      image: '/images/epra.webp',
-    },
-    {
-      title: 'Solar EPRA Certification',
-      description: 'Capability in advanced solar energy solutions',
-      image: '/images/epra.webp',
-    },
+    }
   ];
 
   return (
@@ -87,13 +75,6 @@ const Accreditations: React.FC<AccreditationsProps> = ({ className }) => {
           Our certifications are a guarantee of quality, ensuring every project
           meets strict industry standards with precision execution.
         </p>
-
-        <Link href="#">
-          <Button
-            label="view full certifications"
-            className="*:text-background"
-          />
-        </Link>
       </div>
     </section>
   );

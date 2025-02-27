@@ -1,8 +1,5 @@
 import { Crosshair, Eye, Goal } from 'lucide-react';
-import Link from 'next/link';
 import React from 'react';
-import Button from './Button';
-import Image from 'next/image';
 import AnimatedWrapper from './AnimatedWrapper';
 
 interface aboutProps {
@@ -14,7 +11,7 @@ const About: React.FC<aboutProps> = ({ className }) => {
     {
       title: 'Our Mission',
       description:
-        'To be the regional leader in providing high-quality Electro-Mechanical, Telecommunications, Security, and IT Solutions that drive business performance.',
+        'GuardCore aims to be the regional leader in providing high-quality Electro-Mechanical, Telecommunications, Security, and IT Solutions that drive business performance.',
       icon: <Goal size={48} strokeWidth={1} />,
     },
     {
@@ -26,65 +23,48 @@ const About: React.FC<aboutProps> = ({ className }) => {
     {
       title: 'Our Goal',
       description:
-        'Enhancing and supporting business performance with top-tier solutions that integrate reliability, efficiency, and technological prowess.',
+        'GuardCore\'s goal is to enhance and support business performance with top-tier solutions that integrate reliability, efficiency, and technological prowess.',
       icon: <Crosshair size={48} strokeWidth={1} />,
     },
   ];
 
   return (
-    <section id='about' className={`z-[10] relative px-0 md:px-8  ${className}`}>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-0 relative z-[10] px-4 md:px-0">
-        {points.map((point, index) => (
-          <AnimatedWrapper
-            animationType='slideUp'
-            duration={(index + 1) * 0.75} // Set duration to stagger animations based on index
-            key={index}
-            className={`flex flex-col items-center gap-4 p-6 rounded-3xl ${
-              index === 1 && ''
-            }`}>
-            <div className="px-4 aspect-square bg-accent *:stroke-background flex items-center justify-center rounded-full">
-              {point.icon}
-            </div>
-            <h3 className='animated-gradient'>{point.title}</h3>
-            <p className="text-center">{point.description}</p>
-          </AnimatedWrapper>
-        ))}
-      </div>
+    <>
+      <section
+        id="solutions"
+        className={`flex flex-col items-center gap-12 pt-16 ${className}`}>
+        <h2 className="font-bold text-center leading-6 md:leading-[3rem] md:max-w-[60vw]">
+          Tailored Solutions for Modern Business Challenges
+        </h2>
+        <p className="text-center md:max-w-[60vw]">
+          Guardcore Technologies delivers tailored services that meet modern
+          industry demands. Each solution blends certified expertise with
+          cutting-edge technology to deliver compliant, future-ready results.
+        </p>
+      </section>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 md:items-center gap-6 md:gap-24 mt-24">
-        <AnimatedWrapper duration={0.75} animationType='scaleIn' className="col-span-1 flex flex-col gap-4 px-4 md:px-0">
-          <h3 className="uppercase text-sm md:text-base text-accent">who we are</h3>
-          <h4 className="text-2xl md:text-4xl font-bold">
-            Elevating Industries with Cutting-Edge Solutions
-          </h4>
-          <p>
-            We empower industries through <strong>advanced technology</strong>,
-            backed by globally certified experts trained to master evolving
-            challenges. By collaborating with{' '}
-            <strong>top-tier manufacturers</strong>, we consistently pioneer
-            next-generation innovations that redefine standards. Our{' '}
-            <strong>relentless focus</strong> on professional development
-            ensures unmatched precision in every project. Trusted worldwide, we
-            turn complex technical demands into{' '}
-            <strong>transformative results</strong> that drive progress.
-          </p>
-
-          <Link href="/#services">
-            <Button label='dicover more' />
-          </Link>
-        </AnimatedWrapper>
-
-        <div className="col-span-1 aspect-[4/3] md:border border-foreground-faded rounded-3xl md:overflow-hidden shadow-2xl">
-          <Image
-            src={'/images/port.webp'}
-            alt="Guardcore Technologies"
-            width={1080}
-            height={1080}
-            className="w-full h-full aspect-[4/3]" 
-          />
+      <section
+        id="about"
+        className={`z-[10] relative px-0 md:px-8  ${className}`}>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 relative z-[10] px-4 md:px-0">
+          {points.map((point, index) => (
+            <AnimatedWrapper
+              animationType="slideUp"
+              duration={(index + 1) * 0.75}
+              key={index}
+              className={`flex flex-col items-center gap-4 p-6 rounded-3xl ${
+                index === 1 && ''
+              }`}>
+              <div className="px-4 aspect-square bg-accent *:stroke-background flex items-center justify-center rounded-full">
+                {point.icon}
+              </div>
+              <h3 className="animated-gradient">{point.title}</h3>
+              <p className="text-center">{point.description}</p>
+            </AnimatedWrapper>
+          ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
