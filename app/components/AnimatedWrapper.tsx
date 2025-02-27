@@ -59,7 +59,7 @@ const AnimatedWrapper: React.FC<AnimatedWrapperProps> = ({
       transition={transition}
       // Viewport settings: 'once' ensures the animation only runs once,
       // 'amount' sets the threshold for how much should be visible.
-      viewport={{ once: false, amount: viewportAmount }}
+      viewport={{ once: true, amount: viewportAmount }}
       className={className}
       {...props}
     >

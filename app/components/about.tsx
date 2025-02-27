@@ -32,7 +32,7 @@ const About: React.FC<aboutProps> = ({ className }) => {
   ];
 
   return (
-    <section id='about' className={`z-[10] relative -mt-20 px-0 md:px-8  ${className}`}>
+    <section id='about' className={`z-[10] relative px-0 md:px-8  ${className}`}>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-0 relative z-[10] px-4 md:px-0">
         {points.map((point, index) => (
           <AnimatedWrapper
