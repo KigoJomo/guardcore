@@ -64,6 +64,7 @@ export default function HeroSlideshow() {
               className="object-right md:object-cover"
               priority
             />
+            
             <div className="absolute inset-0 transparent-gradient" />
 
             {/* Slide Content */}

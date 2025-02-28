@@ -184,10 +184,7 @@ export const services: Service[] = [
     successStory:
       'A major corporation enhanced its global communications efficiency by 40% using our telephony conferencing solutions.',
     icon: <Group size={32} color="#2563EB" />, // New icon for telephony solutions
-    image: 'conferencing.webp',       // Image representing this service
+    image: 'conf-room.webp',       // Image representing this service
     keywords: ['IP Telephony', 'Conferencing', 'PABX', 'Unified Communications'],
   },
-  // add IP Telephony Conferencing Solutions
-    // - IP Telephony and PABX Systems
-    // - Conference room Audio and Video Solutions
 ];
