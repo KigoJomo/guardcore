@@ -32,11 +32,11 @@ const Accreditations: React.FC<AccreditationsProps> = ({ className }) => {
     <section
       id="accreditations"
       className={`${className} py-16 md:py-24 px-4 md:px-8`}>
-      <div className="md:w-1/2 mb-12 md:mb-16">
+      <div className="w-full flex flex-col items-center mb-12 md:mb-16">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Mark of Excellence
         </h2>
-        <p className="text-lg md:text-xl text-muted-foreground">
+        <p className="text-lg md:text-xl text-center">
           Validating our expertise and commitment to industry standards
         </p>
       </div>
