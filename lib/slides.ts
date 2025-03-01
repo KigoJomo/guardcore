@@ -19,14 +19,14 @@ export const slides: Slide[] = [
     title: 'Innovative ICT Solutions',
     description:
       'Empower your business with high-speed, secure networking and IT infrastructure that ensures seamless connectivity and efficiency.',
-    image: '/images/hero/network.webp',
+    image: '/images/hero/network-management.webp',
   },
   {
     id: 2,
     title: 'Reliable Telecom & Wireless Communiation Systems',
     description:
       'Experience clear, uninterrupted communication with our comprehensive telecom solutions for voice and data transmission.',
-    image: '/images/hero/wireless-comms.webp',
+    image: '/images/hero/telecom.webp',
   },
   {
     id: 3,
