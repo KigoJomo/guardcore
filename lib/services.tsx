@@ -3,16 +3,16 @@
 import { Cpu, Group, MessageSquare, Shield, Wifi, Zap } from 'lucide-react';
 
 export interface Service {
-  title: string;           
-  slug: string;            
-  content: string;         
-  features: string[];      
-  industries: string[];    
+  title: string;
+  slug: string;
+  content: string;
+  features: string[];
+  industries: string[];
   certifications: string[];
-  successStory: string;    
-  icon: React.ReactNode;   
-  image: string;           
-  keywords: string[];      
+  successStory: string;
+  icon: React.ReactNode;
+  image: string;
+  keywords: string[];
 }
 
 export const services: Service[] = [
@@ -23,9 +23,9 @@ export const services: Service[] = [
       'Comprehensive security systems including AI-powered surveillance, intrusion detection, and biometric access control.',
     features: [
       'AI-powered CCTV surveillance',
-      'Intrusion detection systems',  
+      'Intrusion detection systems',
       'Advanced biometric and RFID access control',
-      'Perimeter security solutions', 
+      'Perimeter security solutions',
       'Centralized monitoring systems',
     ],
     industries: [
@@ -80,10 +80,10 @@ export const services: Service[] = [
       'Enterprise-grade networking solutions ensuring businesses stay connected, secure, and efficient.',
     features: [
       'High-speed fiber optic and copper LAN',
-      'Enterprise-grade wireless networking',  
+      'Enterprise-grade wireless networking',
       'Network security and firewall solutions',
-      'Cloud infrastructure deployment',         
-      'VoIP and unified communications systems', 
+      'Cloud infrastructure deployment',
+      'VoIP and unified communications systems',
     ],
     industries: [
       'Commercial Enterprises and Office Spaces',
@@ -108,7 +108,7 @@ export const services: Service[] = [
     content:
       'Robust communication systems that facilitate seamless connectivity, collaboration, and real-time information exchange.',
     features: [
-      'IP Telephony and PABX Systems',               
+      'IP Telephony and PABX Systems',
       'Video conferencing solutions with HD clarity',
       'VHF/UHF and GSM 3G/4G radio communication networks',
       'Secure communication channels for sensitive data',
@@ -138,10 +138,10 @@ export const services: Service[] = [
       'Turnkey power, electrical, and electromechanical solutions ensuring reliable and efficient energy management.',
     features: [
       'Supply and installation of generators, UPS systems, and battery banks',
-      'High and low voltage electrical systems for diverse applications',     
-      'Solar energy solutions for sustainable power management',             
-      'Precision cooling systems for data centers and telecom infrastructure', 
-      'Preventive maintenance and 24/7 technical support',                     
+      'High and low voltage electrical systems for diverse applications',
+      'Solar energy solutions for sustainable power management',
+      'Precision cooling systems for data centers and telecom infrastructure',
+      'Preventive maintenance and 24/7 technical support',
     ],
     industries: [
       'Manufacturing and Industrial Facilities',
@@ -158,7 +158,12 @@ export const services: Service[] = [
       'A major data center achieved a 30% reduction in operational costs by deploying our energy solutions.',
     icon: <Zap size={32} color="#2563EB" />,
     image: 'power.webp',
-    keywords: ['Generators', 'UPS Systems', 'Solar Energy', 'Electrical Installations'],
+    keywords: [
+      'Generators',
+      'UPS Systems',
+      'Solar Energy',
+      'Electrical Installations',
+    ],
   },
   {
     title: 'IP Telephony Conferencing Solutions',
@@ -166,8 +171,8 @@ export const services: Service[] = [
     content:
       'Robust, scalable telephony and conferencing systems ensuring clear, uninterrupted communication across all business channels.',
     features: [
-      'IP Telephony and PABX Systems',               // Modern voice systems for crisp communication
-      'Conference room Audio and Video Solutions',    // Enables high-quality meetings
+      'IP Telephony and PABX Systems', // Modern voice systems for crisp communication
+      'Conference room Audio and Video Solutions', // Enables high-quality meetings
       'Seamless integration with unified communications platforms', // Integrates with existing systems
     ],
     industries: [
@@ -184,7 +189,12 @@ export const services: Service[] = [
     successStory:
       'A major corporation enhanced its global communications efficiency by 40% using our telephony conferencing solutions.',
     icon: <Group size={32} color="#2563EB" />, // New icon for telephony solutions
-    image: 'conf-room.webp',       // Image representing this service
-    keywords: ['IP Telephony', 'Conferencing', 'PABX', 'Unified Communications'],
+    image: 'conf-room.webp', // Image representing this service
+    keywords: [
+      'IP Telephony',
+      'Conferencing',
+      'PABX',
+      'Unified Communications',
+    ],
   },
 ];
