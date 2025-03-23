@@ -12,7 +12,7 @@ export const slides: Slide[] = [
     title: 'Integrated Security Solutions',
     description:
       'Protect your assets with advanced surveillance, intrusion detection, and access control systems for real-time, robust security.',
-    image: '/images/hero/integrated-security.webp',
+    image: '/images/hero/integrated-security-2.webp',
   },
   {
     id: 1,
