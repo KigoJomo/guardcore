@@ -44,8 +44,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Nunito Sans", serif; */
-  font-family: 'Funnel Display', serif;
+  font-family: var(--font-funnel);
   color: var(--primary);
 }
 
@@ -54,7 +53,6 @@ h2,
 h3,
 h4 {
   text-transform: capitalize;
-  /* font-family: "Funnel Display", serif; */
 }
 
 h1 {
@@ -62,7 +60,7 @@ h1 {
     var(--font-size) * var(--font-ratio) * var(--font-ratio) * var(--font-ratio)
   );
   text-transform: uppercase;
-  font-family: 'Nunito Sans', serif;
+  font-family: var(--font-nunito);
 }
 
 h2 {
@@ -96,14 +94,6 @@ label {
 [data-theme='light'] .product-card-price {
   color: var(--background-light);
   text-wrap: nowrap;
-}
-
-.grotesk {
-  font-family: 'Host Grotesk', serif;
-}
-
-.italiana {
-  font-family: 'Italiana', serif;
 }
 
 img {

@@ -1,8 +1,18 @@
+import { Funnel_Display, Nunito_Sans } from "next/font/google"
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/whatsapp-button";
+
+const funnel = Funnel_Display({
+  variable: "--font-funnel",
+  subsets: ['latin'],
+})
+
+const nunito = Nunito_Sans({
+  variable: "--font-nunito"
+})
 
 export const metadata: Metadata = {
   title: "Guardcore Technologies | Leading Electro-Mechanical, Telecom & IT Solutions in Kenya",
@@ -31,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scrollbar-hidden">
-      <body className="scrollbar-hidden relative">
+      <body className={`scrollbar-hidden relative ${funnel.variable} ${nunito.variable} antialiased`}>
         <Header />
         {children}
         <WhatsAppButton />

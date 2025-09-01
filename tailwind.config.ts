@@ -19,6 +19,10 @@ export default {
         accent: 'var(--accent)',
         'accent-dark': 'var(--accent-dark)',
       },
+      fontFamily: {
+        funnel: ['var(--font-funnel)'],
+        nunito: ['var(--font-nunito)'],
+      },
     },
   },
   plugins: [tailwindcssMotion],
