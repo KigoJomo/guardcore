@@ -11,7 +11,8 @@ const funnel = Funnel_Display({
 })
 
 const nunito = Nunito_Sans({
-  variable: "--font-nunito"
+  variable: "--font-nunito",
+  subsets: ['latin']
 })
 
 export const metadata: Metadata = {
